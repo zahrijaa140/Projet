@@ -22,5 +22,5 @@ test:
 
 production:
   <<: *default
-  url: postgres://postgresql-round-22029
-   pool: 5
+  url: postgres://syjwarlzdgohde:8caeab8bb0fe925d553932d1d55b23a23b3082c678aa621cb4504d930aba97ae@ec2-54-225-88-191.compute-1.amazonaws.com:5432/d9c4c3nl1flu28
+  pool: 5
