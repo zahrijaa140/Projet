@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-- 2.2
+- 2.3.4
 deploy:
   provider: heroku
   api_key:
@@ -8,3 +8,4 @@ deploy:
   app: lpa2khadidja
   on:
     repo: zahrijaa140/Projet
+  run: "rake db:migrate"
