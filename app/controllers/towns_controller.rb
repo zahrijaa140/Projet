@@ -10,8 +10,8 @@ class TownsController < ApplicationController
   # GET /towns/1
   # GET /towns/1.json
   def show
-    darksky = Darksky::API.new('ab1de693147c2ad22bee29ce98cb2f57')
-    forecast = darksky.forecast(@town.latitude,@town.longitude)
+    forecast = ForecastIO.forecast(@town.latitude, @town.longitude)
+    render locals: { resource:  forecast}
   end
 
   # GET /towns/new
