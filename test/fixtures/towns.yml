@@ -6,6 +6,6 @@ one:
   longitude: 1.5
 
 two:
-  nom: Belfort
+  nom: MyString
   latitude: 1.5
   longitude: 1.5
